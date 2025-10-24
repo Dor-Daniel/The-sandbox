@@ -1,119 +1,173 @@
+
+---
+
 # The Sandbox — Experiments in Code, Math & Art
 
 ---
-A personal collection of small experiments, sketches, and side projects exploring the intersection of mathematics, graphics, and creativity.
 
-This repository serves as a living notebook of ideas; from p5.js generative sketches to C++ and Java mini-games, to shader experiments and other short, focused explorations.
+A personal space for learning, exploration, and curiosity - where **mathematics**, **graphics**, and **creativity** meet through code.
 
-Each project inside this repository started as a question:
+This repository is a living notebook: a mix of **p5.js sketches**, **Java mini-games**, and **GLSL shader experiments**, each created to test an idea or visualize a concept.
 
-“What happens if I try to implement this concept myself?”
+Every project here began with a simple question:
+
+> “What if I implement this concept myself — from scratch?”
 
 ---
 
 ## Overview
 
-#### This repo collects independent mini-projects that I created to explore different topics such as:
+**The Sandbox** collects self-contained experiments in:
 
-- Graphics programming and visual simulations
+* **Graphics & Simulation** — visual explorations in 2D and 3D
+* **Procedural Generation** — randomness, noise, and structure
+* **Mathematical Visualization** — geometry, fractals, transformations
+* **Game Mechanics & Animation Systems** — small interactive worlds
+* **Shader Art & GPU Thinking** — writing pixels directly with math
 
-- Procedural generation and creative coding
+These projects are not about completion — they’re about understanding.
+Each one captures a single idea, expressed through visual computation.
 
-- Geometry and mathematical visualization
-
-- Game design and small algorithmic mechanics
-
-Most of these were built to learn and understand something new — not necessarily to finish a full product.
+---
 
 ## Repository Structure
 
-    the-sandbox/
-    ├── README.md
+```
+THE-SANDBOX/
+├── glsl/                 # Shaders & GPU experiments
+│   └── CubeTransformations.glsl
+│
+├── java/                 # Java projects (academic-level OOP)
+│   ├── ArkanoidGame/     # Brick breaker with modular OOP design
+│   └── game of life/     # Simple cellular automaton
+│
+├── p5/                   # Generative sketches and math visualizations
+│   ├── 3b1b cube collision simulation
+│   ├── ball in ellipse trajectory simulation
+│   ├── cauchy epsilon delta visualizer
+│   ├── drawing curves using complex numbers
+│   ├── drawing grayscale pics using Fourier transform
+│   ├── drawing parametric curves using circles
+│   ├── group permutation – math animation
+│   ├── kind of three body simulation
+│   ├── line movement to rotation appearance
+│   ├── linear transformations visualizer
+│   ├── lotus creation animation
+│   ├── mandelbrot set generation
+│   ├── molds simulation
+│   ├── perlin noise 1D visualizer
+│   ├── periodic functions generation using circles
+│   ├── sierpinski triangle deterministic
+│   ├── sierpinski triangle random
+│   └── string art – picture copy greedy
+│
+└── README.md
+```
 
+Each folder contains a local README (or notes) explaining the idea, how to run it, and screenshots under `/docs/images`.
 
+---
 
-*Each folder contains its own small README (or notes) with short explanations and images. docs/images/ holds preview screenshots and GIFs for the main gallery below. Projects are intentionally lightweight and self-contained — easy to open, read, and run.*
+##  Featured Sections
 
-## Featured Mini Projects
+###  p5.js Sketches
 
-### Below are some of my favorite experiments.
+Visual experiments exploring geometry, chaos, and artistic structure.
 
+Includes:
 
-#### Project Name
+* **Fractals:** Mandelbrot, Sierpinski, and diffusion-like molds
+* **Motion & Symmetry:** Parametric curves, rotations, line transformations
+* **Fourier & Noise:** Generating functions and waveforms from circles
+* **Creative Explorations:** String art, group permutations, and blooming forms
 
-What i did
+[See the full table here →](./p5/README.md)
 
-**Focus:**
-*intuition and focuses.*
+---
 
-#### Mini gallery
-![]()
+### Java Projects
 
+Projects designed around strong software engineering principles and academic OOP structure.
 
-(More coming soon…)
+#### Arkanoid Game
 
-**I frequently add new experiments when exploring a concept in math, graphics, or simulation.**
+A full brick-breaker built from scratch using `biuoop.jar`, featuring event-driven design, listeners, and modular architecture.
+**Focus:** OOP design patterns, clean architecture, animation loop, game systems.
+*(See `java/ArkanoidGame/README.md` for full explanation.)*
 
-## Learning Themes
+#### Game of Life
 
-Across these projects, I explored:
+Classic simulation of Conway’s cellular automaton.
+**Focus:** Data structures, 2D grid updates, emergent behavior.
 
-- Geometry and transformations (rotations, scaling, matrices)
+---
 
-- Procedural algorithms (noise, randomness, fractals)
+### GLSL Experiments
 
-- Simulation design (particles, flocking, physics)
+GPU-side explorations of mathematical transformations.
 
-- Shader programming (GLSL, lighting models, distance fields)
+#### Cube Transformations
 
-- Creative visualization of abstract concepts
+Tests different transformation matrices (rotation, scaling, shear) directly in shader code.
+**Focus:** Understanding coordinate systems, matrix math, and 3D intuition.
 
-*Each project represents a snapshot of curiosity — a focused exercise in learning something by building it.*
+---
 
-## How to Explore
+##  Learning Themes
 
-#### Each folder contains:
+Across these small experiments, recurring themes appear:
 
-- A small README with setup/run instructions
+* Linear algebra & coordinate transformations
+* Fractals, chaos, and emergent geometry
+* Noise functions & generative structure
+* Simulation and physical intuition
+* Art through algorithmic form
 
-- Source files and assets
+Each project is a snapshot of curiosity — a focused attempt to learn something by building it, visually.
 
-- Screenshots or GIFs under /docs/images/
+---
 
-#### Examples:
+##  How to Explore
 
-- p5.js sketches can be opened directly in the browser
+Each subfolder includes:
 
-- Java projects use a single Main.java or .jar for quick testing
+* Source files and scripts
+* A small README or comments
+* Screenshots/GIFs (when available)
+* Minimal setup requirements
 
-- Shader files can be viewed in ShaderToy
- or any GLSL viewer
+**Examples:**
 
-- C++/Raylib experiments can be built with g++ or Visual Studio 
+* Open `.js` sketches in your browser or the [p5.js editor](https://editor.p5js.org/)
+* Run Java games via command line (`javac` + `java`)
+* View `.glsl` shaders using ShaderToy or any GLSL viewer
+
+---
 
 ## Philosophy
 
-**“I write code to explore — not to finish.”**
 
-These projects are born from *the joy of revealing hidden structures in the mathematical universe through code.*
-
-Each experiment is a *small journey into the harmony between logic and beauty;* where equations become patterns, and algorithms turn into art.
-
-I don’t code to polish or complete; I code to discover, to watch mathematics unfold visually, and to experience the quiet satisfaction of understanding something infinite through something finite.
-
-## Future Additions
-
-- New p5.js sketches on fractals and chaos systems
-
-- Small Unity physics toys
-
-- Procedural texture generator
+This repository isn’t about finished products - it’s about *insight through creation.*
+It’s where math becomes visual, and logic becomes art.
+Each file is an experiment, a question asked in the language of computation.
 
 ---
-## Closing Thoughts
 
-**This space is an invitation.**
-To pause the distinction between science and art, and enter a world where logic breathes beauty and mathematics paints.
+## Future Directions
 
-*Each line of code here is not a product, but a lens; a way to glimpse the quiet order behind what seems chaotic.
-It’s a place for anyone who wishes to see equations as colors, algorithms as compositions, and computation as a language of wonder.*
+* 3D p5.js sketches exploring projections and rotation groups
+* More GLSL experiments (distance fields, lighting, transformations)
+* Mini Unity physics sandboxes
+* Procedural texture and shape generators
+
+---
+
+##  Closing Thoughts
+
+**The Sandbox** is a place to explore freely — where structure and beauty meet in unexpected ways.
+It’s a reminder that programming isn’t just about solving problems; it’s about *seeing* patterns emerge.
+
+> *Each line of code is a brushstroke; each algorithm, a shape of thought.*
+
+---
+*Enjoy!*
