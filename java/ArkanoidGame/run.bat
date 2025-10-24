@@ -16,10 +16,10 @@ echo Compiling Java sources...
 echo -----------------------------------------------
 
 REM Collect all .java files recursively
-dir /s /b "%SRC%\*.java" > sources.txt
+dir /s /b "%SRC%\*.java" > "%SRC%\sources.txt"
 
 REM Compile everything
-javac -cp ".;%LIB%" -d "%OUT%" @sources.txt
+javac -cp ".;%LIB%" -d "%OUT%" @"%SRC%\sources.txt"
 
 if errorlevel 1 (
     echo.
